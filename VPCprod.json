@@ -151,6 +151,13 @@
                 "VpcId": {"Ref": "Vpc2"}
                 
             }
+        },
+        "rtpublic": {
+            "Type": "AWS::EC2::RouteTable",
+            "Properties": {
+                "VpcId": {"Ref": "Vpc1"},
+                "Tags": [{"Key": "Name", "Value": "RT-Public-VPC1"}]
+            }
         }
 
             
